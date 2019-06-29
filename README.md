@@ -582,7 +582,7 @@ call az group create --location $(location) --name "shared-$(application)" --tag
 
 call az storage account create --name "shared$(application)tfsa" --resource-group "shared-$(application)" --location $(location) --sku Standard_LRS  --tags application="$(application)" deployment="terraform"
 
-call az storage container create --name "terraform" --account-name "shared$(application)tfsa"
+call az storage container create --name "terraform" --account-name "shared$(application)tfsa" --public-access off
 ```
 
 Ce script créé :
