@@ -1,0 +1,5 @@
+location = "__location__"
+environment = "__environment__"
+application = "__application__"
+sql_server_login = "__sql_server_login__"
+sql_server_password = "__sql_server_password__"
